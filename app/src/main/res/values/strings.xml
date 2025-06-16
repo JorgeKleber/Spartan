@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Spartan</string>
+    <string name="title_activity_lista_de_treinos">ListaDeTreinosActivity</string>
 </resources>
