@@ -6,7 +6,7 @@ import java.time.LocalDateTime
 data class TreinoDTO(
     val id: Int,
     val nome: String,
-    val duracao: LocalDateTime
-){
-    fun toTreino(): Treino = Treino(id, nome, duracao)
+    val exercicios: List<ExercicioDTO>
+) {
+    fun toTreino(): Treino = Treino(id, nome, exercicios.map { it.toExercicio() })
 }
