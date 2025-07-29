@@ -17,27 +17,29 @@ class TreinoRepositoryImpl @Inject constructor(
 
     override suspend fun solicitarTreino(temaDoTreino: String): Treino {
 
-        val result = apiService.geraTreinoDeepSeek(
-            """
-            Gere um treino de academia em formato JSON com a seguinte estrutura:
-            {
-                "id": 0,
-                "nome": "string",
-                "exercicios": [
-                    {
-                        "id": 0,
-                        "nome": "string",
-                        "series": 0,
-                        "repeticoes": 0,
-                        "carga": 0.0
-                    }
-                ]
-            }
-            
-            O tema do treino é: $temaDoTreino
-            """
-        )
-        return result
+//        val result = apiService.geraTreinoDeepSeek(
+//            """
+//            Gere um treino de academia em formato JSON com a seguinte estrutura:
+//            {
+//                "id": 0,
+//                "nome": "string",
+//                "exercicios": [
+//                    {
+//                        "id": 0,
+//                        "nome": "string",
+//                        "series": 0,
+//                        "repeticoes": 0,
+//                        "carga": 0.0
+//                    }
+//                ]
+//            }
+//
+//            O tema do treino é: $temaDoTreino
+//            """
+//        )
+//        return result
+
+        TODO("Not yet implemented")
     }
 
     override fun criarNovoTreino(treino: Treino) {

@@ -16,11 +16,6 @@ android {
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles("consumer-rules.pro")
 
-        val deepseekApiKey : String = project.findProperty("DEEPSEEK_API_KEY") as? String
-            ?: System.getenv("GITHUB_API_KEY")
-            ?: ""
-
-        buildConfigField("String", "DEEPSEEK_API_KEY", deepseekApiKey)
     }
 
     buildTypes {
