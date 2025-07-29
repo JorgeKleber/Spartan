@@ -21,3 +21,7 @@ dependencyResolutionManagement {
 
 rootProject.name = "Spartan"
 include(":app")
+include(":data")
+include(":domain")
+include(":presentation")
+include(":core")
